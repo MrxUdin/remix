@@ -3,9 +3,6 @@ import { limit } from "@grammyjs/ratelimiter";
 import env from "../env";
 import errors from "./errors";
 import i18n from "./i18n";
-import { InlineKeyboard } from 'grammy';
-
-…reply(…, { reply_markup: new InlineKeyboard().text('Text', 'callback').row().url('Text', 'url') })
 
 const bot = new Bot(env.BOT_TOKEN);
 
