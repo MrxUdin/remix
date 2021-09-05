@@ -43,3 +43,6 @@
         }
     ]
 }
+import { InlineKeyboard } from 'grammy';
+
+…reply(…, { reply_markup: new InlineKeyboard().text('Text', 'callback').row().url('Text', 'url') })
